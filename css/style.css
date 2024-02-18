@@ -329,8 +329,7 @@ header {
 
 .about_img_left {
     border-radius: 10px;
-    width: 43%;
-    /* height: 53%; */
+    width: 63rem;
 }
 
 
@@ -620,6 +619,27 @@ header {
         display: none;
     }
 
+}
+
+/* responsive mobile view */
+@media screen and (max-width:480px) {
+    html {
+        font-size: 35%;
+    }
+
+    .about_img_left {
+        border-radius: 10px;
+        width: 40rem;
+        /* height: 100%; */
+    }
+
+    .about_text_right {
+        margin-top: 2rem;
+        width: 40rem;
+    }
+    .bgocean{
+        display: inline;
+    }
 }
 
 
