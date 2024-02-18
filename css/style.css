@@ -329,7 +329,8 @@ header {
 
 .about_img_left {
     border-radius: 10px;
-    width: 63rem;
+    width: 43%;
+    /* height: 53%; */
 }
 
 
