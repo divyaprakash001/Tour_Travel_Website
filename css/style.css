@@ -13,11 +13,13 @@
 html {
     font-size: 10px;
 }
+body{
+    overflow-x: hidden;
+}
 
 header {
     display: flex;
     justify-content: space-between;
-    /* flex-direction: row; */
     align-items: center;
     height: 8rem;
     background-color: antiquewhite;
@@ -27,10 +29,14 @@ header {
     left: 0;
     right: 0;
     z-index: 10;
+    overflow-x: hidden;
+    padding-left: 4% ;
+    padding-right: 4%;
 }
 
 .logo_container {
-    margin-left: 4%;
+    /* margin-left: 4%; */
+    width: 15%;
 }
 
 .logo_img {
@@ -38,41 +44,33 @@ header {
 }
 
 .nav_bar {
-    margin-right: 4%;
-    width: 70%;
+    /* width: 70%; */
     /* border: 1px solid blue; */
     /* background-color: aqua; */
-}
-
-.nav_bar ul {
-    list-style: none;
-    /* background-color: aquamarine; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    /* margin-right: 4%; */
 }
 
-.nav_bar ul li {
-    /* border: 1px solid red; */
-    /* background-color: rgb(55, 188, 32); */
-    /* padding: 1rem 2.5rem; */
-}
 
-.nav_bar ul li a {
+.nav_bar  a {
     text-decoration: none;
+    padding: .8rem 2rem;
     font-size: 1.8rem;
+    font-weight: 600;
     text-transform: uppercase;
     color: #000000;
-    padding: .8rem 2rem;
-    font-weight: 600;
     /* background-color: rgb(167, 188, 32); */
+    flex-shrink: 2;
+    /* transition: all .9s ease-in-out; */
 }
 
-.nav_bar ul li a:hover {
-    /* transition: all .9s ease-in-out; */
+.nav_bar a:hover {
     /* text-decoration: underline; */
     color: rgb(43, 40, 40);
 }
+
 
 .btn1 {
     padding: 1rem 2.5rem;
@@ -83,6 +81,7 @@ header {
     color: #000000;
     font-weight: 600;
     border-radius: 1rem;
+    flex-shrink: 2;
 }
 
 .btn1:hover {
@@ -628,7 +627,8 @@ header {
     }
 
     body {
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
+        max-width: 100%;
     }
 
     .fa-bars {
@@ -639,7 +639,7 @@ header {
     }
 
     .res_navbar {
-        display: block;
+        /* display: block; */
     }
 
     .nav_bar {
