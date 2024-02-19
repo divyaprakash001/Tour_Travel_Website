@@ -39,6 +39,7 @@ header {
 .logo_container {
     /* margin-left: 4%; */
     width: 15%;
+    /* height: 75%; */
 }
 
 .logo_img {
@@ -178,7 +179,7 @@ header {
     margin-bottom: 3.125rem;
     width: 100%;
     /* background-color: antiquewhite; */
-    background-image: url('/images/united_arab.jpg');
+    background-image: url('/images/city.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
@@ -402,7 +403,7 @@ header {
 .top_rating_container {
     width: 100%;
     /* background-color: antiquewhite; */
-    background-image: url('/images/norway.jpg');
+    background-image: url('/images/city.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
@@ -421,10 +422,12 @@ header {
 
 .left_float h2 {
     font-size: 3rem;
+    color: white;
     text-transform: uppercase;
 }
 
 .left_float h3 {
+    color: white;
     font-size: 6rem;
     text-transform: uppercase;
 }
