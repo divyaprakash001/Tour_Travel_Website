@@ -402,7 +402,7 @@ header {
 
 .top_rating_container {
     width: 100%;
-    /* background-color: antiquewhite; */
+    background-color: antiquewhite;
     background-image: url('/images/city.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -422,12 +422,12 @@ header {
 
 .left_float h2 {
     font-size: 3rem;
-    color: white;
+    /* color: white; */
     text-transform: uppercase;
 }
 
 .left_float h3 {
-    color: white;
+    /* color: white; */
     font-size: 6rem;
     text-transform: uppercase;
 }
