@@ -164,6 +164,14 @@ header {
     width: 100%;
     height: 50rem;
     margin-bottom: 3.125rem;
+    width: 100%;
+    /* background-color: antiquewhite; */
+    background-image: url('/images/united_arab.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+
+    background-position: center;
 
 }
 
