@@ -179,7 +179,7 @@ header {
     margin-bottom: 3.125rem;
     width: 100%;
     /* background-color: antiquewhite; */
-    background-image: url('/images/city.jpg');
+    background-image: url('./images/city.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
@@ -403,7 +403,7 @@ header {
 .top_rating_container {
     width: 100%;
     background-color: antiquewhite;
-    background-image: url('/images/city.jpg');
+    background-image: url('./images/city.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
