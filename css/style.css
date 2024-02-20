@@ -37,9 +37,7 @@ header {
 }
 
 .logo_container {
-    /* margin-left: 4%; */
     width: 15%;
-    /* height: 75%; */
 }
 
 .logo_img {
@@ -47,14 +45,9 @@ header {
 }
 
 .nav_bar {
-    /* width: 70%; */
-    /* border: 1px solid blue; */
-    /* background-color: aqua; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* margin-right: 4%; */
-    /* position: absolute; */
 }
 
 
@@ -70,11 +63,11 @@ header {
     color: #000000;
     padding-top: 2.6rem;
     padding-bottom: 2.6rem;
-    /* background-color: rgb(167, 188, 32); */
     flex-shrink: 2;
     transition: color .3s ease-in-out;
 }
-.nav_bar a:hover:after{
+
+.nav_bar a:hover:after {
     content: '';
     width: 80%;
     position: absolute;
@@ -84,9 +77,7 @@ header {
 }
 
 .nav_bar a:hover {
-    /* text-decoration: underline; */
     color: var(--green);
-    /* border-bottom: 4px solid var(--green); */
 }
 
 
@@ -120,46 +111,40 @@ header {
 /* responsive navbar */
 
 .res_container {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     z-index: 100;
 }
 
 .res_navbar {
-    position: absolute;
+    position: relative;
     top: 8rem;
-    /* right: -120rem; */
     display: flex;
     flex-direction: column;
     display: none;
-    /* align-items: center; */
-    transition: all .8s ease-in-out;
-    /* height: 42rem; */
+    transition: all 1s ease-in-out;
     background-color: antiquewhite;
     width: 25rem;
     z-index: 1;
-    /* box-shadow: 4px 4px 12px 0 rgba(0, 0, 0, .05); */
     border-bottom-left-radius: 10px;
 }
 
 .res_navbar a {
     display: block;
-    /* border-radius: 30px; */
     text-decoration: none;
-    flex-shrink: 2;
     padding-left: 8.8rem;
-    width: 100%;
     border-bottom: 1px solid rgb(181, 166, 166);
     font-size: 2.5rem;
     font-weight: 500;
+    cursor: pointer;
 }
 
 
 
 
 .fa-bars {
-    position: absolute;
+    position: fixed;
     display: none;
     right: 3rem;
     top: 4rem;
@@ -173,7 +158,6 @@ header {
 
 /* banner styling */
 .banner_container {
-    /* position: relative; */
     width: 100%;
     height: 50rem;
     margin-bottom: 3.125rem;
@@ -223,13 +207,17 @@ header {
     margin: 1.5rem;
     border: 1.2rem solid var(--green);
     box-shadow: inset 0 0 7px grey;
-    border-left-color: white;
+    border-left-color: var(--white);
     border-top-color: var(--green);
     border-right-color: var(--green);
     border-bottom-color: var(--green);
     /* text-align: center; */
     box-sizing: border-box;
 }
+
+
+
+
 
 /*  Apply css properties to the second 
     child of ui-widgets class */
@@ -413,6 +401,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 7rem;
+    /* height: 100rem; */
 }
 
 .left_float {
@@ -567,6 +556,26 @@ header {
     font-size: 2rem;
     font-weight: 600;
     margin: 1rem 0;
+}
+
+@media screen and (max-width:1272px) {
+    .about_container {
+        flex-direction: column;
+    }
+
+
+
+    .about_text_right {
+        margin-top: 2rem;
+        width: 63rem;
+    }
+
+    .bgocean {
+        display: inline-block;
+    }
+
+
+
 }
 
 @media screen and (max-width:1043px) {
