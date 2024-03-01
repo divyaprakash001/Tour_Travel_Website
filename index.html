@@ -111,7 +111,7 @@
                 <img class="banner-img" src="images/chardham.webp" alt="">
             </div>
             <div class="right_section">
-                <h1>Let us plan you a<br> perfect <span class="bld" style="font-size: 6rem; font-weight: 800;">India
+                <h1>Let us plan you a perfect <span class="bld" style="font-size: 6rem; font-weight: 800;">India
                         Holiday</span></h1>
                 <p>Custom-Crafted Tour Packages for Unforgettable Holiday Experiences in India.</p>
                 <div class="card_container">
@@ -233,127 +233,156 @@
             </div>
         </div>
 
-        <!-- top rating section -->
-        <!-- <div class="top_rating_container">
-            <div class="left_float">
-                <h2>Top Rating</h2>
-                <div class="rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                </div>
-                <h3>Italy</h3>
-            </div>
-
-            <div class="floating_box_container">
-
-                <div class="float_right_container">
-                    <img src="images/united_arab.jpg" alt="" class="float_img_left float-img">
-                    <div class="float_text_right">
-                        <h2>Val Di Versa Us</h2>
-                        <h3>14 days | 14 night | Free Allowance</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatem, blanditiis, odit
-                            iure enim
-                            atque sunt tempora sequi eaque vel suscipit provident iste. Minus aliquid, beatae
-                            consequuntur fuga
-                            voluptatibus cum.
-                        </p>
-
-                        <a href="https://www.youtube.com/@imdivyaprakash" target="_blank" class="btn1 btn about_btn"
-                            href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>Learn
-                            More</a>
-                    </div>
-                </div>
-                <div class="float_right_container">
-                    <img src="images/newyork.jpg" alt="" class="float_img_left float-img">
-                    <div class="float_text_right">
-                        <h2>Turkey</h2>
-                        <h3>14 days | 14 night | Free Allowance</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatem, blanditiis, odit
-                            iure enim
-                            atque sunt tempora sequi eaque vel suscipit provident iste. Minus aliquid, beatae
-                            consequuntur fuga
-                            voluptatibus cum.
-                        </p>
-
-                        <a href="https://www.youtube.com/@imdivyaprakash" target="_blank" class="btn1 btn about_btn"
-                            href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>Learn
-                            More</a>
-                    </div>
-                </div>
-                <div class="float_right_container">
-                    <img src="images/norway.jpg" alt="" class="float_img_left float-img">
-                    <div class="float_text_right">
-                        <h2>London</h2>
-                        <h3>14 days | 14 night | Free Allowance</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatem, blanditiis, odit
-                            iure enim
-                            atque sunt tempora sequi eaque vel suscipit provident iste. Minus aliquid, beatae
-                            consequuntur fuga
-                            voluptatibus cum.
-                        </p>
-
-                        <a href="https://www.youtube.com/@imdivyaprakash" target="_blank" class="btn1 btn about_btn"
-                            href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>Learn
-                            More</a>
-                    </div>
-                </div>
-
-
-
-            </div>
-
-
-        </div> -->
-
 
         <!-- Explore Top Destinations by Region -->
 
         <div class="dest_region">
             <h2>Explore Top Destinations by Region</h2>
             <div class="region_btn_container">
-                <a href="">North India</a>
-                <a href="">South India</a>
-                <a href="">East India</a>
-                <a href="">West India</a>
-                <a href="">Central India</a>
+                <a onclick="changeCard('#a1')" id="a1">North India</a>
+                <a onclick="changeCard('#a2')" id="a2">South India</a>
+                <a onclick="changeCard('#a3')" id="a3">East India</a>
+                <a onclick="changeCard('#a4')" id="a4">West India</a>
+                <a onclick="changeCard('#a5')" id="a5">Central India</a>
             </div>
 
-            <div class="region_card_container">
+            <div class="region_card_container" id="template1">
                 <div class="left_region">
-                    <img src="images/maldives.jpg" >
+                    <img src="images/singapore.jpg">
                 </div>
                 <div class="right_region">
                     <div class="right_region_card">
-                        <img src="images/myanmar.jpg" alt="">
+                        <img src="images/thailand_tour.jpg" alt="">
+                    </div>
+                    <div class="right_region_card">
+                        <img src="images/vietnam.jpg" alt="">
+                    </div>
+                    <div class="right_region_card">
+                        <img src="images/norway.jpg" alt="">
+                    </div>
+                    <div class="right_region_card">
+                        <img src="images/dubai_tour.jpg" alt="">
+                    </div>
+                    <div class="right_region_card">
+                        <img src="images/italyImage.jpg" alt="">
+                    </div>
+                    <div class="right_region_card">
+                        <img src="images/united_arab.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <div class="region_card_container" id="template2">
+                <div class="left_region">
+                    <img src="images/thailand_tour.jpg">
+                </div>
+                <div class="right_region">
+                    <div class="right_region_card">
+                        <img src="images/singapore.jpg" alt="">
+                    </div>
+                    <div class="right_region_card">
+                        <img src="images/norway.jpg" alt="">
+                    </div>
+                    <div class="right_region_card">
+                        <img src="images/indonesia.jpg" alt="">
+                    </div>
+                    <div class="right_region_card">
+                        <img src="images/hongKong.jpg" alt="">
                     </div>
                     <div class="right_region_card">
                         <img src="images/myanmar.jpg" alt="">
                     </div>
                     <div class="right_region_card">
-                        <img src="images/myanmar.jpg" alt="">
+                        <img src="images/maldives.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <div class="region_card_container" id="template3">
+                <div class="left_region">
+                    <img src="images/dubai_tour.jpg">
+                </div>
+                <div class="right_region">
+                    <div class="right_region_card">
+                        <img src="images/australia.jpg" alt="">
+                    </div>
+                    <div class="right_region_card">
+                        <img src="images/italyImage.jpg" alt="">
+                    </div>
+                    <div class="right_region_card">
+                        <img src="images/italyimage2.jpg" alt="">
+                    </div>
+                    <div class="right_region_card">
+                        <img src="images/maldives.jpg" alt="">
+                    </div>
+                    <div class="right_region_card">
+                        <img src="images/norway.jpg" alt="">
+                    </div>
+                    <div class="right_region_card">
+                        <img src="images/vietnam.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <div class="region_card_container" id="template4">
+                <div class="left_region">
+                    <img src="images/singapore.jpg">
+                </div>
+                <div class="right_region">
+                    <div class="right_region_card">
+                        <img src="images/thailand_tour.jpg" alt="">
+                    </div>
+                    <div class="right_region_card">
+                        <img src="images/vietnam.jpg" alt="">
+                    </div>
+                    <div class="right_region_card">
+                        <img src="images/norway.jpg" alt="">
+                    </div>
+                    <div class="right_region_card">
+                        <img src="images/dubai_tour.jpg" alt="">
+                    </div>
+                    <div class="right_region_card">
+                        <img src="images/italyImage.jpg" alt="">
+                    </div>
+                    <div class="right_region_card">
+                        <img src="images/united_arab.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <div class="region_card_container" id="template5">
+                <div class="left_region">
+                    <img src="images/vietnam.jpg">
+                </div>
+                <div class="right_region">
+                    <div class="right_region_card">
+                        <img src="images/maldives.jpg" alt="">
                     </div>
                     <div class="right_region_card">
                         <img src="images/myanmar.jpg" alt="">
                     </div>
                     <div class="right_region_card">
-                        <img src="images/myanmar.jpg" alt="">
+                        <img src="images/united_arab.jpg" alt="">
                     </div>
                     <div class="right_region_card">
-                        <img src="images/myanmar.jpg" alt="">
+                        <img src="images/newyork.jpg" alt="">
                     </div>
-                   
+                    <div class="right_region_card">
+                        <img src="images/city.jpg" alt="">
+                    </div>
+                    <div class="right_region_card">
+                        <img src="images/nepal_tour.jpg" alt="">
+                    </div>
+
                 </div>
             </div>
 
-            
+
 
 
         </div>
 
-<!-- ------------------------------------------------------------ -->
+        <!-- ------------------------------------------------------------ -->
         <div class="maharaj_section">
             <img class="maha_img" src="images/trainbg.jpg" alt="">
             <div class="maha_container">
@@ -498,6 +527,93 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
 
+        function changeCard(a) {
+            if (a == '#a1') {
+                document.querySelector('#template1').style.display = 'flex';
+                document.querySelector('#template2').style.display = 'none';
+                document.querySelector('#template3').style.display = 'none';
+                document.querySelector('#template4').style.display = 'none';
+                document.querySelector('#template5').style.display = 'none';
+            }
+            else if (a == '#a2') {
+                document.querySelector('#template1').style.display = 'none';
+                document.querySelector('#template2').style.display = 'flex';
+                document.querySelector('#template3').style.display = 'none';
+                document.querySelector('#template4').style.display = 'none';
+                document.querySelector('#template5').style.display = 'none';
+            }
+            else if (a == '#a3') {
+                document.querySelector('#template1').style.display = 'none';
+                document.querySelector('#template2').style.display = 'none';
+                document.querySelector('#template3').style.display = 'flex';
+                document.querySelector('#template4').style.display = 'none';
+                document.querySelector('#template5').style.display = 'none';
+            }
+            else if (a == '#a4') {
+                document.querySelector('#template1').style.display = 'none';
+                document.querySelector('#template2').style.display = 'none';
+                document.querySelector('#template3').style.display = 'none';
+                document.querySelector('#template4').style.display = 'flex';
+                document.querySelector('#template5').style.display = 'none';
+            } else {
+                document.querySelector('#template1').style.display = 'none';
+                document.querySelector('#template2').style.display = 'none';
+                document.querySelector('#template3').style.display = 'none';
+                document.querySelector('#template4').style.display = 'none';
+                document.querySelector('#template5').style.display = 'flex';
+            }
+        }
+
+
+
+
+        // function for destination container
+        // $(function () {
+        //     $('#a1').click(function () {
+        //         $('#template1').css('display', 'flex')
+        //         $('#template2').css({ 'display': 'none' })
+        //         $('#template3').css('display', 'none')
+        //         $('#template4').css('display', 'none')
+        //         $('#template5').css('display', 'none')
+        //     })
+        //     $('#a2').click(function () {
+        //         $('#template1').css('display', 'none')
+        //         $('#template2').css({ 'display': 'flex' })
+        //         $('#template3').css('display', 'none')
+        //         $('#template4').css('display', 'none')
+        //         $('#template5').css('display', 'none')
+        //     })
+        //     $('#a3').click(function () {
+        //         $('#template1').css('display', 'none')
+        //         $('#template2').css({ 'display': 'none' })
+        //         $('#template3').css('display', 'flex')
+        //         $('#template4').css('display', 'none')
+        //         $('#template5').css('display', 'none')
+        //     })
+        //     $('#a4').click(function () {
+        //         $('#template1').css('display', 'none')
+        //         $('#template2').css({ 'display': 'none' })
+        //         $('#template3').css('display', 'none')
+        //         $('#template4').css('display', 'flex')
+        //         $('#template5').css('display', 'none')
+        //     })
+        //     $('#a5').click(function () {
+        //         $('#template1').css('display', 'none')
+        //         $('#template2').css({ 'display': 'none' })
+        //         $('#template3').css('display', 'none')
+        //         $('#template4').css('display', 'none')
+        //         $('#template5').css({ 'display': 'flex' })
+        //     })
+        // })
+
+
+
+
+
+
+
+
+        // jquery function for responsive navbar
         $(document).ready(function () {
             a = 0;
             $('.fa-bars').click(function () {

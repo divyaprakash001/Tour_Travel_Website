@@ -596,7 +596,8 @@ header {
 /* explore destination by region */
 .dest_region {
     width: 90%;
-    height: 100rem;
+    /* position: relative; */
+    height: auto;
     /* border: 2px solid red; */
     margin: 5rem auto;
 }
@@ -620,27 +621,30 @@ header {
     text-decoration: none;
     color: var(--header-color);
     padding-bottom: 2rem;
+
 }
 
 .region_btn_container a:hover {
     border-bottom: 5px solid var(--red);
+    cursor: pointer;
 }
 
 
-/* ------------------------------------------------ */
+/* --------------------region card container---------------------------- */
 .region_card_container {
     margin-top: 4rem;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid blue;
     justify-content: space-between;
+    /* border: 2px solid blue; */
+    
 }
 
 .left_region {
     width: 40%;
     /* border: 1px solid brown; */
-    /* height: 55rem; */
+    height: 50rem;
 }
 
 .left_region>img {
@@ -651,23 +655,32 @@ header {
 .right_region {
     width: 55%;
     display: flex;
-    border: 1px solid brown;
+    /* border: 2px solid brown; */
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .right_region_card {
     width: 30%;
-    height: 25rem;
-    border-radius: 2rem;
+    height: 24rem;
+    border-radius: 1rem;
     overflow: hidden;
-    
 }
 
 .right_region_card img {
     width: 100%;
     height: 100%;
 }
+
+#template1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#template2,#template3,#template4,#template5{
+    display: none;
+}
+
 
 
 /* majaraj section styling */
@@ -1048,6 +1061,28 @@ header {
         display: inline;
     }
 
+}
+
+/* responsive mobile view */
+@media screen and (max-width:600px) {
+    html {
+        font-size: 35%;
+    }
+
+    .about_img_left {
+        border-radius: 10px;
+        width: 40rem;
+        /* height: 100%; */
+    }
+
+    .about_text_right {
+        margin-top: 2rem;
+        width: 40rem;
+    }
+
+    .bgocean {
+        display: inline;
+    }
 }
 
 /* responsive mobile view */
