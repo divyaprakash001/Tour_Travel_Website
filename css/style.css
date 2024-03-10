@@ -28,6 +28,7 @@ header {
     border-bottom: 1px solid lightgray;
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .05);
     z-index: 999999;
+    
 }
 
 .logo_container {
@@ -167,6 +168,8 @@ header {
 .banner-img {
     width: 100%;
     height: 100%;
+    /* object-fit: cover; */
+    /* animation: 1s ease-out 0s 1 slideInLeft; */
 }
 
 .right_section {
@@ -176,6 +179,7 @@ header {
     padding-top: 3%;
     padding-bottom: 2rem;
     position: relative;
+    /* animation: 1s ease-out 0s 1 slideInRight; */
 }
 
 .right_section h1 {
@@ -209,6 +213,8 @@ header {
     justify-content: space-evenly;
     padding: 4rem 2rem;
     /* background-color: rgb(146, 141, 83); */
+    z-index: -9999;
+    animation: 1s ease-out 0s 1 slideInRight;
 }
 
 .card_item {
@@ -242,6 +248,7 @@ header {
 .card_img_container {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .button_container {
@@ -369,6 +376,40 @@ header {
 
 }
 
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInDown {
+    0% {
+        transform: translateY(200%);
+        visibility: hidden;
+    }
+
+    80% {
+        visibility: visible;
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
 
 .tour_card {
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .05);
@@ -379,6 +420,21 @@ header {
     border-radius: 1rem;
 }
 
+.tour_card:first-child {
+    animation: 1s ease-out 0s 1 slideInLeft;
+}
+
+.tour_card:last-child {
+    animation: 1s ease-out 0s 1 slideInRight;
+}
+
+.tour_card:nth-child(2) {
+    z-index: -999;
+    /* animation: 1s ease-out 0s 1 slideInDown; */
+    animation: 1s ease-out 0s 1 slideInDown;
+}
+
+
 
 .card_img {
     width: 100%;
@@ -387,6 +443,7 @@ header {
 
 .tour_card div img {
     height: 30rem;
+    animation: 1s ease-out 0s 1 slideInLeft;
 }
 
 .desc {
@@ -430,11 +487,13 @@ header {
 .about_img_left {
     border-radius: 10px;
     width: 63rem;
+    animation: 1s ease-out 0s 1 slideInLeft;
 }
 
 
 .about_text_right {
     width: 45%;
+    animation: 1s ease-out 0s 1 slideInRight;
 }
 
 .about_text_right h2 {
@@ -638,7 +697,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     /* border: 2px solid blue; */
-    
+
 }
 
 .left_region {
@@ -672,12 +731,15 @@ header {
     height: 100%;
 }
 
-#template1{
+#template1 {
     display: flex;
     flex-wrap: wrap;
 }
 
-#template2,#template3,#template4,#template5{
+#template2,
+#template3,
+#template4,
+#template5 {
     display: none;
 }
 
@@ -1033,6 +1095,55 @@ header {
         max-width: 100%;
     }
 
+    .left_section {
+        width: 100%;
+        margin: 0;
+        object-fit: cover;
+    }
+
+    .right_section {
+        text-align: center;
+        width: 90%;
+        padding-top: 3%;
+        padding-bottom: 2rem;
+        position: relative;
+        /* animation: 1s ease-out 0s 1 slideInRight; */
+    }
+
+    .right_section>h1+p {
+        width: 90%;
+        font-size: 3rem;
+        margin: 0 auto;
+    }
+
+    .button_container {
+        margin-bottom: 2rem;
+        margin-left: -2.5rem;
+        /* border: 2px solid red; */
+    }
+
+    .dest_region>h2 {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .maha_container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .maha_container .maha_left {
+        /* width: 70%; */
+        /* height: 80%; */
+    }
+
+    .internation_package>h3 {
+        font-size: 2rem;
+    }
+
+
     .fa-bars {
         display: block;
         right: 4rem;
@@ -1067,6 +1178,58 @@ header {
 @media screen and (max-width:600px) {
     html {
         font-size: 35%;
+    }
+/* 
+    header{
+        display: none;
+    } */
+
+    .left_section {
+        width: 100%;
+        margin: 0;
+        object-fit: cover;
+    }
+
+    .right_section {
+        text-align: center;
+        width: 90%;
+        padding-top: 3%;
+        padding-bottom: 2rem;
+        position: relative;
+        /* animation: 1s ease-out 0s 1 slideInRight; */
+    }
+
+    .right_section>h1+p {
+        width: 90%;
+        font-size: 3rem;
+        margin: 0 auto;
+    }
+
+    .button_container {
+        margin-bottom: 2rem;
+        margin-left: -2.5rem;
+        /* border: 2px solid red; */
+    }
+
+    .dest_region>h2 {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .maha_container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .maha_container .maha_left {
+        /* width: 70%; */
+        /* height: 80%; */
+    }
+
+    .internation_package>h3 {
+        font-size: 2rem;
     }
 
     .about_img_left {
