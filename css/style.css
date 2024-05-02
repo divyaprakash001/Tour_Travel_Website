@@ -22,12 +22,14 @@ header {
     height: 7rem;
     background-color: white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     position: relative;
     border-bottom: 1px solid lightgray;
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .05);
     z-index: 999999;
+    padding-left: 2rem;
+    padding-right: 5rem;
     
 }
 
@@ -36,14 +38,14 @@ header {
 }
 
 .navbar {
-    width: 45%;
+    /* width: 45%; */
 }
 
 
 .menu {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     /* border: 2px solid red; */
     height: 8rem;
@@ -51,10 +53,12 @@ header {
 }
 
 
+
 .menu li {
     position: relative;
     cursor: pointer;
     padding: 1rem;
+    margin-right: 2rem;
 }
 
 
@@ -113,9 +117,7 @@ header {
 }
 
 
-.right_navbar {
-    float: right;
-}
+
 
 /* **************************************** */
 
