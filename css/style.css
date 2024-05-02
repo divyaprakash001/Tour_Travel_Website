@@ -422,6 +422,10 @@ header {
     border-radius: 1rem;
 }
 
+
+
+
+
 .tour_card:first-child {
     animation: 1s ease-out 0s 1 slideInLeft;
 }
@@ -437,6 +441,10 @@ header {
 }
 
 
+
+.tour_card:hover{
+    opacity: .5;
+}
 
 .card_img {
     width: 100%;
